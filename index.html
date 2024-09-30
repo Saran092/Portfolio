@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="saran.css">
+	<script type="text/javascript" src="saran.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navBar">
+			<div>
+				<img src="./Images/Saran's Logo.png " alt="Logo" class="logo">
+			</div>
+			<div class="menuBar">
+				<ul>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#work">My Work</a></li>
+					<li><a href="#contact">Contact me</a></li>
+				</ul>
+			</div>
+			<div class="contactBar">
+				<button><img src="./image/moon_icon.png" alt="Mode" style="width:24px"></button>
+				<div class="contactInfo" >
+					<a href="#contact">Contact <img  src="./image/arrow-icon.png" alt="Contact"></a>
+				</div>
+				<button onclick="showSidebar()" class="menuIcon"><img style="width: 24px; .margin: 0;"src="./image/menu-black.png" alt="">
+			</div>
+
+			<!-- Mobile view -->
+
+			<ul class="sideMenu">
+				<div onclick="hideSidebar()"class="Close-div">
+					<img src="./image/close-black.png" alt="" class="closeIcon">
+				</div>
+				<div class="mobileView">
+					<li><a href="#top" onclick="hideSidebar()">Home</a></li>
+					<li><a href="#about" onclick="hideSidebar()">About</a></li>
+					<li><a href="#services" onclick="hideSidebar()">Services</a></li>
+					<li><a href="#work" onclick="hideSidebar()">My Work</a></li>
+					<li><a href="#contact" onclick="hideSidebar()">Contact me</a></li>
+				</div>
+			</ul>
+			
+		</nav>
+	</header>
+
+	 <!-- TOP -->
+	<main>
+		<div class="profilePage">
+			<img src="./Images/Saran.jpg" alt="Profile" class="profileImg">
+			<h3> Hi! I'm Saran <img class="hand-image"src="./image/hand-icon.png"style="width: 26px;"></h3>
+			<h1 class="title">Frontend web Developer</h1>
+			<p>I am an Electronics and Communication Engineering student with a strong interest in both IT and Core Technology.</p>
+			<p>I am eager to explore opportunities that allow me to leverage my skills in both areas.</p>
+
+			<div class="Contact-Resume">
+				<a class="contactButton" href="#contact">contact me<img style="width:16px; margin-left: 10px;" src="./image/right-arrow-white.png" alt=" "></a>
+
+				<a class="resumeButton" href="./image/logo.png" download>my resume<img style="width:16px;margin-left: 10px; " src="./image/download-icon.png" alt=" "></a>
+			</div>
+		</div>
+
+		<!-- About Me -->
+		<div id="about" class="aboutPage">
+			<h4>Introduction</h4>
+			<h2>About Me</h2>
+		</div>
+		<div class="aboutContent">
+			<div>
+				<img style="width: 500px; margin-left:20px;" src="./Images/Profile.png" alt="Profile Pic">
+			</div>
+			<div class="aboutDis">
+				<p style="margin-bottom: 10px;font-size: 25px;">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+
+				<div class="aboutContainer">
+					    <div class="container">
+					        <img src="./image/code-icon.png" alt="">
+					        <h3>Languages</h3>
+					        <p class="Lang-known">HTML, CSS, JavaScript, C, Java, Python</p>
+					    </div>
+					    <div class="container">
+					        <img src="./image/edu-icon.png" alt="">
+					        <h3>Education</h3>
+					        <p class="Lang-known">B.E in Electronics and Communication Engineering</p>
+					    </div>
+					    <div class="container">
+					        <img src="./image/project-icon.png" alt="">
+					        <h3>Projects</h3>
+					        <p class="Lang-known">Built more than 5 projects</p>
+					    </div>
+				</div>
+					    <div class="toolContainer">
+						    <h4>Tools i use</h4>
+						    <ul class="tools">
+						    	<li><img src="./image/vscode.png" alt=""></li>
+						    	<li><img src="./image/firebase.png" alt=""></li>
+						    	<li><img src="./image/mongodb.png" alt=""></li>
+						    	<li><img src="./image/figma.png" alt=""></li>
+						    	<li><img src="./image/git.png" alt=""></li>
+						    </ul>
+						</div>
+					</div>
+			</div>
+		<!-- Service -->
+		<div id="services" class="servicePage">
+			<h4>What I offer</h4>
+			<h2>My Services</h2>
+			<p>I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple</p>
+		</div>
+		<div class="serviceDis">
+			<div class="containerService">
+				<img src="./image/web-icon.png" alt="">
+				<h3>Web design</h3>
+				<p>Web development is the process of building, programming...</p>
+				<a href="#">Read more<img src="./image/right-arrow-bold.png" alt=""></a>
+			</div>
+			<div class="containerService">
+				<img src="./image/mobile-icon.png" alt="">
+				<h3>Mobile app</h3>
+				<p>Web development is the process of building, programming...</p>
+				<a href="#">Read more<img src="./image/right-arrow-bold.png" alt=""></a>
+			</div>
+			<div class="containerService">
+				<img src="./image/ui-icon.png" alt="">
+				<h3>UI/ UX design</h3>
+				<p>Web development is the process of building, programming...</p>
+				<a href="#">Read more<img src="./image/right-arrow-bold.png" alt=""></a>
+			</div>
+			<div class="containerService">
+				<img src="./image/graphics-icon.png" alt="">
+				<h3>Graphics design</h3>
+				<p>Web development is the process of building, programming...</p>
+				<a href="#">Read more<img src="./image/right-arrow-bold.png" alt=""></a>
+			</div>
+		</div>
+
+		<!-- My Work Page -->
+
+		<div id="work" class="workPage">
+			<h4>My portfolio</h4>
+			<h2>My latest work</h2>
+			<p>Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
+		</div>
+
+		<div class="workDis">
+			<div class="work-1">
+				<img class="workDisImg" src="./image/work-1.png" alt="">
+				<div class="work-info">
+					<h3>Frontend project</h3>
+					<p>Web Design</p>
+				</div>
+			</div>
+			<div class="work-2">
+				<img class="workDisImg" src="./image/work-2.png" alt="">
+				<div class="work-info">
+					<h3>Geo based app</h3>
+					<p>mobile app</p>
+				</div>
+			</div>
+			<div class="work-3">
+				<img class="workDisImg" src="./image/work-3.png" alt="">
+				<div class="work-info">
+					<h3>Photography site</h3>
+					<p>Web Design</p>
+				</div>
+			</div>
+			<div class="work-4"> 
+				<img class="workDisImg" src="./image/work-4.png" alt="">
+				<div class="work-info">
+					<h3>UI/UX designing</h3>
+					<p>UI/UX Design</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="showImg">
+			<a href="#" class="workShow">Show more <img style="width: 18px;" src="./image/right-arrow-bold.png" alt=""></a>
+		</div>
+
+
+		<!-- Contact Me Page -->
+		<div id="contact" class="contactPage">
+			<div id="work" class="workPage">
+			<h4>Connect with me</h4>
+			<h2>Get in touch</h2>
+			<p>I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+
+			<form method="POST" action="https://api.web3forms.com/submit" class="custom-form">
+
+				<input type="hidden" name="access_key" value="16859f17-c5fb-4359-95fc-4bfb9edef530">
+				<div class="input">
+					<input type="text" placeholder="Enter your name" class="custom-input" required name="name">
+					<input type="email" placeholder="Enter your email" class="custom-input" required name="email">
+				</div>
+				<textarea rows="6" placeholder="Enter your message" class="custom-textarea" required name="message"></textarea>
+				<button type="submit" class="submitButton">Submit now
+					<img src="./image/right-arrow-white.png" style="width: 16px;">
+				</button>
+			</form>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<div class="footerLogo">
+		<div class="fotterDis">
+			<img src="./Images/Saran's Logo.png" alt="Logo" style="width:144px">
+			<div class="Email">
+				<img src="./image/mail_icon.png" alt="Email-pic" style="width:24px;">
+				sarankkandhasamy@gamil.com
+			</div>			
+		</div>
+		<div class="copyDis">
+			<p>&copy 2024 Saran. All rights reserved.</p>
+			<ul class="socialMedia">
+				<!-- <li><a href="https://instagram.com">Instgram</a></li> -->
+				<li><a href="https://instagram.com">GitHub</a></li>
+				<li><a href="https://instagram.com">LinkedIn</a></li>
+				<li><a href="https://instagram.com">Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
