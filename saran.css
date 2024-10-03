@@ -642,6 +642,9 @@ body{
 	body{
 		text-align: center;
 	}
+	.navBar .logo {
+	margin-left: 10px;
+	}
 	.menuIcon{
 		display: block;
 		margin-right: 10px;
