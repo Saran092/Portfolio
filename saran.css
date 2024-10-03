@@ -632,7 +632,7 @@ body{
 	}
 	
 }
-@media screen and (max-width:640px){
+@media screen and (max-width:600px){
 	header{
 		background-color: transparent;
 		box-shadow:none;
