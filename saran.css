@@ -603,6 +603,9 @@ body{
 		backdrop-filter: none;
 		border-bottom: none;
 	}
+	body{
+		text-align: center;
+	}
 	.menuBar{
 		display: none;
 	}
@@ -629,12 +632,15 @@ body{
 	}
 	
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
 	header{
 		background-color: transparent;
 		box-shadow:none;
 		backdrop-filter: none;
 		border-bottom: none;
+	}
+	body{
+		text-align: center;
 	}
 	.menuIcon{
 		display: block;
@@ -664,6 +670,6 @@ body{
 		grid-template-columns: 1fr;
 	}
 	.custom-textarea{
-		width: 33rem;
+		width: 33.5rem;
 	}
 }
