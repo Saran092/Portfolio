@@ -655,6 +655,7 @@ body{
 	.navBar .logo {
 		margin-top: 20px;
 		margin-left: 0;
+		margin-right: 5px;
 	}
 	.contactBar{
 		margin-right: 30px;
