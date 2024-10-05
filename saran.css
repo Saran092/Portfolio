@@ -647,7 +647,8 @@ body{
 		margin-left: 50px;
 	}
 	.navBar .logo {
-		margin-left: 5px;
+		margin-top: 20px;
+		margin-left: 0;
 	}
 	.contactBar{
 		margin-right: 30px;
@@ -680,6 +681,13 @@ body{
 		grid-template-columns: 1fr 1fr;
 		row-gap: 40px;
 		margin: 0 10px;
+	}
+	.tools{
+		margin-left: 0;
+	}
+	.toolContainer h4{
+		display: flex;
+		justify-content: start;
 	}
 	.workDis {
     	grid-template-columns: repeat(2,1fr); 
