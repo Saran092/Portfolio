@@ -234,7 +234,7 @@ body{
 
 }
 .aboutPic{
-	width:500px;
+	width: 500px; 
 	margin-left:20px;
 }
 .aboutDis{
@@ -644,14 +644,14 @@ body{
 	}
 	body{
 		text-align: center;
-		margin-left:50px;
+		margin-left: 50px;
 	}
 	.navBar .logo {
-		margin-left: 8px;
+		margin-left: 5px;
 	}
-	.profilePage,.aboutPage,.servicePage,.workPage{
+	/*.profilePage,.aboutPage,.servicePage,.workPage{
 		text-align: center;
-	}
+	}*/
 	.menuIcon{
 		display: block;
 		margin-right: 10px;
@@ -670,12 +670,13 @@ body{
 		flex-direction: column;
 	}
 	.aboutPic{
-		width:400px;
-		margin-left:0px;
+		width: 380px;
+		margin-left: 0px;
 	}
 	.serviceDis{
 		grid-template-columns: 1fr 1fr;
 		row-gap: 40px;
+		margin: 0 10px;
 	}
 	.workDis {
     	grid-template-columns: repeat(2,1fr); 
