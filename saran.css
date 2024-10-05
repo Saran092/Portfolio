@@ -649,6 +649,9 @@ body{
 	.navBar .logo {
 		margin-left: 5px;
 	}
+	.contactBar{
+		margin-right: 30px;
+	}
 	/*.profilePage,.aboutPage,.servicePage,.workPage{
 		text-align: center;
 	}*/
