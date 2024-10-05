@@ -254,7 +254,7 @@ body{
 	display: flex;
     flex-direction: column;
 /*    width: 250px;*/
-    border: 1px solid rgba(55, 65, 80,.2);
+    border: 1px solid rgba(55, 65, 80,.5);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -350,7 +350,7 @@ body{
 
 .containerService{
 
-	border: 1px solid rgba(55, 65, 81, .3);
+	border: 1px solid rgba(55, 65, 81, .5);
 	border-radius: 8px;
 	padding: 30px 20px;
 	cursor: pointer;
@@ -513,7 +513,7 @@ body{
     background-color: white;
     margin-top: 10px;
     margin-bottom: 24px;
-    width: 40rem;
+/*    width: 40rem;*/
     resize: vertical;
     font-size: 15px;
 }
@@ -543,7 +543,10 @@ body{
 .submitButton:hover {
     background-color: black; /* Changes background color to solid black on hover */
 }
-
+.submitCon{
+	display: flex;
+	flex-direction: column;
+}
 .footerLogo{
 	margin-top: 100px;
 }
@@ -644,7 +647,10 @@ body{
 	}
 	body{
 		text-align: center;
-		margin-left: 30px;
+		margin-left: 40px;
+	}
+	.navBar {
+		padding-left: 0;
 	}
 	.navBar .logo {
 		margin-top: 20px;
@@ -695,7 +701,7 @@ body{
 	.input{
 		grid-template-columns: 1fr;
 	}
-	.custom-textarea{
+	/*.custom-textarea{
 		width: 33.5rem;
-	}
+	}*/
 }
