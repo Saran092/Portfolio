@@ -1,0 +1,717 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+
+	font-family:"Ovo", serif;
+	scroll-padding-top: 60px;
+	background-color: rgb(17,0,31);
+	color: white;
+}
+ header{
+ 	position: fixed;
+ 	width: 100%;
+ 	background-color: transparent;
+	color: black;
+/*	box-shadow: 0 2px 45px rgba(255,255,255,.1);*/
+	backdrop-filter: blur(4px);
+/*	border-bottom: 1px solid rgba(255,255,255,0.1);*/
+	z-index: 999;
+	font-size: 20px;
+ }
+.navBar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1px 20px;
+	height: 100px;
+}
+.navBar .logo{
+	width: 100px;
+	cursor: pointer;
+	margin-left: 50px;
+}
+
+.menuBar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    font-size: 25px;
+    height: 50px;
+ }
+
+
+.menuBar ul{
+	display: flex;
+	gap: 15px;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+.menuBar ul li{
+	list-style: none;
+	padding: 7px;
+}
+
+.menuBar a ,.contactInfo a{
+	text-decoration: none;
+	color: white;
+}
+
+.contactBar{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+}
+.contactBar button{
+	border: none;
+	background-color:transparent;
+}
+
+.contactBar .contactInfo img{
+	width: 10px;
+	margin-left: 10px;
+}
+
+.contactBar .contactInfo{
+	background-color: transparent;
+	box-shadow: 0 2px 45px rgba(0,0,0,.2);
+	border-radius: 50px;
+	border:1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+	padding: 15px 20px;
+}
+
+.menuIcon{
+	display: none;
+}
+
+.sideMenu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(255, 241, 242,1);
+	z-index: 999;
+	display: none;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	padding: 50px 20px;
+	height: 100vh;
+	width: 240px;
+
+}
+.sideMenu li{
+	list-style: none;
+}
+.sideMenu a{
+	text-decoration: none;
+	color: black;
+}
+
+.Close-div img{
+	width: 20px;
+	cursor: pointer;
+}
+
+.Close-div{
+	position: absolute;
+	top:47px;
+	right: 0;
+	margin-right: 50px;
+}
+
+.mobileView{
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+/*TOP Page*/
+
+.profilePage{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 150px;
+	gap:25px;
+}
+.title{
+	font-family: "Sofadi One", system-ui;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+}
+.profileImg{
+	width: 150px ;
+	height: 150px ;
+	border-radius: 75px;
+	object-fit: cover;
+}
+
+.contactButton{
+	border-radius: 30px;
+	background:linear-gradient(to right,#b820e6, #da7d20);
+	padding: 20px 50px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	text-decoration: none;
+	font-size: 28px;
+
+}
+
+.resumeButton{
+	border-radius: 30px;
+	border: 1px solid grey;
+	background:white;
+	padding: 20px 50px;
+	color: black;
+	display: inline-block;
+	align-items: center;
+	gap: 4px;
+	text-decoration: none;
+	font-size: 28px;
+}
+.Contact-Resume{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	margin-top: 60px;
+}
+
+.profilePage h3
+{
+	font-size: 25px;
+	text-align: center;
+}
+.profilePage p{
+
+	font-size: 22px;
+	text-align: center;
+}
+
+		/*About Page*/
+
+.aboutPage, .servicePage, .workPage{
+  padding-top: 100px; 
+/*  margin-top: -60px; */
+}
+
+.aboutPage{
+	margin-top: 260px;
+}
+.aboutPage h4{
+	text-align: center;
+	font-size: 30px;
+}
+.aboutPage h2{
+	text-align: center;
+	font-size: 60px;
+	font-family: "Sofadi One", system-ui;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+.aboutContent{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+
+}
+.aboutPic{
+	width: 500px; 
+	margin-left:20px;
+}
+.aboutDis{
+	max-width:65rem;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.aboutContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;   
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.container{
+	display: flex;
+    flex-direction: column;
+/*    width: 250px;*/
+    border: 1px solid rgba(255, 255,250,.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+.container:hover{
+	box-shadow: 4px 4px 4px rgba(255, 255, 255,1);
+	background-color:rgba(17,0,31,1) ;
+    transform: translateY(-.025rem);
+}
+.container img{
+	width: 28px;
+	margin-bottom: 5px;
+}
+.container h3{
+	color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container p{
+	color: rgba(255, 255, 255, 0.8);
+    word-wrap: break-word;
+    white-space: normal; 
+    line-height: 1.5;
+    font-size: 18px;
+}
+.toolContainer h4{
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.tools{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	margin-left: 20px;
+}
+.tools li{
+	list-style: none;
+	border: 1px solid rgba(255, 255, 255, .3);
+	border-radius: .5rem;
+	cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+.tools li:hover{
+/*	box-shadow: 0 8px 20px rgba(0, 0, 0, 1);*/
+	box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(-.025rem);
+}
+.tools li img{
+	width: 30px;
+	padding: 5px 10px;
+	aspect-ratio: 1/1;
+}
+
+      /*services Page*/
+
+.servicePage{
+	margin-top: 70px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.servicePage h4{
+	font-size: 18px;
+}
+.servicePage h2{
+	font-size: 40px;
+	font-family: "Sofadi One", system-ui;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.servicePage p{
+	word-wrap: break-word;
+    white-space: normal; 
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Outfit",sans-serif;
+}
+
+.serviceDis{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	column-gap: 30px;
+	margin: 0 80px;
+}
+.serviceDis img{
+	width: 40px;
+}
+
+.containerService{
+
+	border: 1px solid rgba(255, 255, 255, .6);
+	border-radius: 8px;
+	padding: 30px 20px;
+	cursor: pointer;
+	transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+
+.containerService h3{
+	color: rgba(255,255, 255, 1);	
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.containerService p{
+	font-family: "Outfit", sans-serif;
+	color: rgba(255,255, 255,.8);
+	font-size: 14px;
+	line-height: 1.25rem;	
+}
+
+.containerService a{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+	color: rgba(255, 255, 255, .8);
+	font-family: "Outfit", sans-serif;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.containerService a img{
+	width: 16px;
+}
+
+.containerService:hover{
+	box-shadow: 4px 4px 4px rgba(255, 255, 255, 1);
+    transform: translateY(-.025rem);	
+}
+
+/*Mywork Page*/
+
+.workPage{
+	margin-top: 70px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.workPage h4{
+	font-size: 18px;
+}
+.workPage h2{
+	font-size: 40px;
+	font-family: "Sofadi One", system-ui;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.workPage p{
+	word-wrap: break-word;
+    white-space: normal; 
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Outfit",sans-serif;
+}
+
+.workDis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+/*	grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    gap: 30px;
+    margin: 0 30px;
+}
+
+.workDis div {
+    position: relative; 
+    overflow: hidden;
+}
+
+.workDisImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 8px;
+}
+
+.workDis div:hover img {
+    transform: scale(1.01);
+}
+
+.work-info h3{
+	font-family: "Outfit",sans-serif;
+	font-weight: bold;
+}
+.work-info p{
+	font-family:"Ovo",serif ;
+}
+.work-info {
+    position: absolute; 
+    bottom: 100px; 
+    margin: 0 5px;
+    overflow: hidden;
+    color: black; 
+    background-color: rgba(255, 255, 255, .5); 
+    padding: 10px; 
+    border-radius: 5px; 
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.workDis div:hover .work-info {
+    opacity: 1;
+}
+.showImg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+.workShow {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	box-shadow: 0 2px 45px rgba(0,0,0,.2);
+	border-radius: 50px;
+	border:1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+	padding: 20px 40px;
+	transition: background-color 0.5s;
+}
+.workShow:hover{
+	background-color: rgba(17,0,50,1) ;
+}
+.custom-input{
+	flex: 1; 
+    padding: 15px;
+    outline: none; 
+    border: 0.5px solid white; 
+    border-radius: 6px; 
+    background-color: rgb(17,0,31);
+    font-size: 18px;
+}
+.custom-form {
+    max-width: 42rem; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.input{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.custom-textarea {
+    grid-column: span 2; 
+    padding: 16px;
+    outline: none;
+    border: 0.5px solid white;
+    border-radius: 6px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 24px;
+/*    width: 40rem;*/
+    resize: vertical;
+    background-color: rgb(17,0,31);
+    font-size: 18px;
+}
+.submitButton{
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: between;
+}
+.submitButton {
+    padding: 16px 32px;
+    width: max-content; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 8px; 
+    background-color: transparent;
+    color: white;
+    border: 1px solid white; 
+    border-radius: 90px;
+    margin-top: 50px;
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.submitButton:hover {
+   	background-color: rgb(17,0,50);
+}
+.submitCon{
+	display: flex;
+	flex-direction: column;
+}
+.footerLogo{
+	margin-top: 100px;
+}
+.fotterDis{
+	text-align: center;
+}
+.Email{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+
+}
+.copyDis{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid grey; 
+    margin-left: 10%; 
+    margin-right: 10%;
+    margin-top: 3rem; 
+    padding-top: 1.5rem; 
+    padding-bottom: 1.5rem;
+	align-items: center;
+}
+.socialMedia{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin-top: 4px;
+}
+.socialMedia li{
+	list-style: none;
+}
+.socialMedia a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+
+	.contactInfo{
+		display: none;
+	}
+}
+@media screen and (max-width:840px){
+	header{
+		background-color: transparent;
+		box-shadow:none;
+		backdrop-filter: none;
+		border-bottom: none;
+	}
+	body{
+		text-align: center;
+	}
+	.menuBar{
+		display: none;
+	}
+	.menuIcon{
+		display: block;
+		margin-right: 10px;
+	}
+	.aboutContent{
+		flex-direction: column;
+	}
+	.aboutContainer{
+		display: flex;
+		flex-direction: column;
+	}
+	.serviceDis{
+		grid-template-columns: 1fr 1fr 1fr;
+		row-gap: 40px;
+	}
+	.workDis {
+    	grid-template-columns: repeat(3,1fr); 
+	}
+	.input{
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+@media screen and (max-width:600px){
+	header{
+		background-color: transparent;
+		box-shadow:none;
+		backdrop-filter: none;
+		border-bottom: none;
+	}
+	body{
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 5px;
+	}
+	.navBar {
+		padding-left: 0;
+	}
+	.navBar .logo {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.contactBar{
+		margin-right: 30px;
+	}
+	/*.profilePage,.aboutPage,.servicePage,.workPage{
+		text-align: center;
+	}*/
+	.menuIcon{
+		display: block;
+		margin-right: 10px;
+	}
+	.menuBar{
+		display: none;
+	}
+	.Contact-Resume{
+		flex-direction: column;
+	}
+	.aboutContent{
+		flex-direction: column;
+	}
+	.aboutContainer{
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutPic{
+		width: 380px;
+		margin-left: 0px;
+	}
+	.serviceDis{
+		grid-template-columns: 1fr 1fr;
+		row-gap: 40px;
+		margin: 0 10px;
+	}
+	.tools{
+		margin-left: 0;
+	}
+	.toolContainer h4{
+		display: flex;
+		justify-content: start;
+	}
+	.workDis {
+    	grid-template-columns: repeat(2,1fr); 
+	}
+	.input{
+		grid-template-columns: 1fr;
+	}
+	/*.custom-textarea{
+		width: 33.5rem;
+	}*/
+}
