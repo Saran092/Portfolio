@@ -233,7 +233,10 @@ body{
 	gap: 30px;
 
 }
-
+.aboutPic{
+	width:500px;
+	margin-left:20px;
+}
 .aboutDis{
 	max-width:65rem;
 	margin-right: 20px;
@@ -665,6 +668,10 @@ body{
 	.aboutContainer{
 		display: flex;
 		flex-direction: column;
+	}
+	.aboutPic{
+		width:250px;
+/* 		margin-left:50px; */
 	}
 	.serviceDis{
 		grid-template-columns: 1fr 1fr;
