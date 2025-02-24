@@ -156,10 +156,10 @@ body{
 	text-align: center;
 }
 .profileImg{
-	width: 150px ;
-	height: 150px ;
-	border-radius: 75px;
-	object-fit: cover;
+	width: 250px ;
+	height: 250px ;
+	/* border-radius: 75px; */
+	/* object-fit: cover; */
 }
 
 .contactButton{
@@ -309,7 +309,7 @@ body{
     transform: translateY(-.025rem);
 }
 .tools li img{
-	width: 30px;
+	width: 40px;
 	padding: 5px 10px;
 	aspect-ratio: 1/1;
 }

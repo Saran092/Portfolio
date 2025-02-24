@@ -12,7 +12,7 @@ body{
 	background-color: rgb(17,0,31);
 	color: white;
 }
- header{
+header{
  	position: fixed;
  	width: 100%;
  	background-color: transparent;
@@ -158,10 +158,10 @@ body{
 	text-align: center;
 }
 .profileImg{
-	width: 150px ;
-	height: 150px ;
-	border-radius: 75px;
-	object-fit: cover;
+	width: 250px ;
+	height: 250px ;
+	/* border-radius: 75px; */
+	/* object-fit: contain; */
 }
 
 .contactButton{
@@ -312,7 +312,7 @@ body{
     transform: translateY(-.025rem);
 }
 .tools li img{
-	width: 30px;
+	width: 40px;
 	padding: 5px 10px;
 	aspect-ratio: 1/1;
 }
@@ -448,6 +448,7 @@ body{
 }
 .work-info p{
 	font-family:"Ovo",serif ;
+	margin-top: 4px;
 }
 .work-info {
     position: absolute; 
@@ -461,6 +462,7 @@ body{
     opacity: 0;
     cursor: pointer;
     transition: opacity 0.3s;
+	line-height: 20px;
 }
 .workDis div:hover .work-info {
     opacity: 1;
